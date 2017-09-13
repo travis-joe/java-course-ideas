@@ -6,5 +6,4 @@ public interface CourseIdeaDAO {
     boolean add(CourseIdea idea);
 
     List<CourseIdea> findAll();
-
 }

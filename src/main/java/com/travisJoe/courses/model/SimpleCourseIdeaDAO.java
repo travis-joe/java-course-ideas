@@ -3,11 +3,11 @@ package com.travisJoe.courses.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SimpleCourseIdeaDAO implements CourseIdeaDAO{
+public class SimpleCourseIdeaDAO implements CourseIdeaDAO {
     private List<CourseIdea> ideas;
 
     public SimpleCourseIdeaDAO() {
-        this.ideas = new ArrayList<>();
+        ideas = new ArrayList<>();
     }
 
     @Override

@@ -5,7 +5,6 @@ public class CourseIdea {
     private String creator;
 
     public CourseIdea(String title, String creator) {
-
         this.title = title;
         this.creator = creator;
     }
@@ -27,6 +26,7 @@ public class CourseIdea {
 
         if (title != null ? !title.equals(that.title) : that.title != null) return false;
         return creator != null ? creator.equals(that.creator) : that.creator == null;
+
     }
 
     @Override
@@ -35,5 +35,4 @@ public class CourseIdea {
         result = 31 * result + (creator != null ? creator.hashCode() : 0);
         return result;
     }
-
 }
