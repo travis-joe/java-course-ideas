@@ -38,7 +38,7 @@ public class CourseIdea {
         return slug;
     }
 
-    public List<String> getVoters() {
+    public List<String> getVoter() {
         return new ArrayList<>(voters);
     }
 

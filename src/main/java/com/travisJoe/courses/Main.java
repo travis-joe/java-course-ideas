@@ -66,5 +66,11 @@ public class Main {
             res.redirect("/ideas");
             return null;
         });
+
+        get("/ideas/:slug", (req,res) -> {
+            Map<String, Object> model = new HashMap<>();
+            model.put("idea", dao.findBySlug(req.params("slug")));
+            return new ModelAndView(model, "idea.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
