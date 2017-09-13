@@ -2,7 +2,12 @@
     <h1>Current ideas</h1>
     <ul>
         {{#each ideas}}
-            <li>{{ title }}</li>
+            <li>
+                <form action="/ideas/{{slug}}/vote" method="post">
+                    {{ title }}（{{voteCount}} votes）
+                    <button>Vote</button>
+                </form>
+            </li>
         {{/each}}
     </ul>
     <form action="/ideas" method="post">
